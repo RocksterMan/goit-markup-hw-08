@@ -35,12 +35,43 @@
                         <use href="./images/symbol-defs.svg#icon-smartphone"></use></svg>                
                     +38 096 111 11 11</a></li>
             </ul>
+        <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu__container" data-menu-open>
+        <svg class="menu-button__icon" aria-label="Перемикач мобільного меню" width="40" height="40">
+        <use class="menu-button__icon--menu" href="./images/symbol-defs.svg#icon-mobile-menu-open"></use>
+        <use class="menu-button__icon--close" href="./images/symbol-defs.svg#icon-mobile-menu-close"></use>
+    </svg>
+    </button>
+            <div class="menu__container" id="menu__container" data-menu-close>
+            <ul class="mob-menu">
+                <li class="mob-menu__item">
+                <a class="mob-menu__link mob-menu__link--current" href="./index.html">Студія</a>
+                </li>
+                <li class="mob-menu__item">
+                <a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
+                </li>
+                <li class="mob-menu__item">
+                <a class="mob-menu__link" href="">Контакти</a>
+                </li>
+            </ul>
+            <div class="mob-menu-thumb">
+                <ul class="menu-contacts">
+                    <li class="menu-contacts__item"><a class="menu-contacts__link" href="tel:+380961111111">+38 096 111 11 11</a></li>
+                    <li class="menu-contacts__item"><a class="menu-contacts__link" href="mailto:info@devstudio.com">info@devstudio.com</a></li>
+                </ul>
+                <ul class="menu-social list">
+                    <li class="menu-social__item"><a class="menu-social__link" href="">Instagram</a></li>
+                    <li class="menu-social__item"><a class="menu-social__link" href="">Twitter</a></li>
+                    <li class="menu-social__item"><a class="menu-social__link" href="">Facebook</a></li>
+                    <li class="menu-social__item"><a class="menu-social__link" href="">LinkedIn</a></li>
+            </ul>
+            </div>
+        </div>
         </div>
 </header>
 <!-- Portfolio cases -->
 <main>
     <section class="portfolio">
-    <div class="container">
+    <div class="container portfolio-container">
         <h1 class="all-hidden-title">Портфоліо</h1>
     <!-- Filter buttons -->
         <ul class="list portfolio-btn-list">
@@ -176,9 +207,10 @@
 </main>
 <!-- Footer -->
 <footer class="footer">
-    <div class="container">
-        <div class="footer-address">
-            <a href="./index.html" class="logo"> <span class="logo__web--color">Web</span><span class="logo__studio--color">Studio</span></a>
+    <div class="container footer-container">
+        <div class="footer-contacts">
+            <div class="footer-address">
+            <a href="./index.html" class="logo footer-logo"> <span class="logo__web--color">Web</span><span class="logo__studio--color">Studio</span></a>
             <address class="footer-address__list">
                 <p class="footer-address__location">м. Київ, пр-т Лесі Українки, 26</p> 
                 <ul class="footer-address__item list">
@@ -188,8 +220,8 @@
                         <a href="tel:+380991111111" class="footer-address__link">+38 099 111 11 11</a></li>
                 </ul>
             </address>
-        </div>
-        <div class="footer-social">
+            </div>
+            <div class="footer-social">
             <p class="footer-social__title">Приєднуйтесь</p>
             <ul class="footer-social__list list">
             <li class="footer-social__item">
@@ -211,8 +243,8 @@
                 <a class="footer-social__link link" href="https://www.linkedin.com" target="_blank" rel="noreferrer noopener">
                     <svg class="footer-social__icon" width="20" height="20">
                 <use href="./images/symbol-defs.svg#icon-linkedin"></use>
-            </svg></a></li>
-            </ul>
+            </svg></a></li></ul>
+            </div>
         </div>
         <div class="footer-subscribe">
             <p class="footer-subscribe__title">Підпишіться на розсилку</p>
@@ -220,9 +252,10 @@
                 <label for="footer-subscribe__mail" class="footer-subscribe-mail"></label>
                 <input class="footer-subscribe__input" type="email" name="submit-mail" id="footer-subscribe__mail" placeholder="E-mail">
                 <button type="submit" class="footer-subscribe__button">Підписатися</button>
-            </div>
+        </div>
         </div>
      </div>
 </footer>
+<script src="./js/mobile-menu.js"></script>
 </body>
 </html>

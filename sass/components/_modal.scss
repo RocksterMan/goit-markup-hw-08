@@ -35,8 +35,8 @@
 .modal {
     position: relative;
 
-    width: 320px;
-    height: 581px;
+    width: 450px;
+    // height: 581px;
 
     // left: 50%;  
     // top: 50%;
@@ -104,12 +104,12 @@
     padding: 40px;
 
     @media screen and (min-width: 480px) {
-    width: 450px;
-  }
+        width: 450px;
+    }
 
-  @media screen and (min-width: 1200px) {
-    width: 528px;
-  }
+    @media screen and (min-width: 1200px) {
+        width: 528px;
+    }
 }
 
 .modal-form__title {
@@ -325,7 +325,7 @@ textarea {
 }
 
 .modal-form__send-button {
-    display: inline-block;
+    display: flex;
     align-items: center;
     justify-content: center;
     
