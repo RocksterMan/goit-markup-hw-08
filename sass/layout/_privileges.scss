@@ -1,0 +1,94 @@
+.privileges {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}
+@media screen and (min-width: 1200px) {
+  .privileges {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+}
+@media screen and (max-width: 479px) {
+  .privileges {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+.privileges-blocks {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    grid-gap: 30px;
+}
+@media screen and (min-width: 480px) {
+  .privileges-item {
+    width: 450px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .privileges-item {
+    width: 354px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .privileges-item {
+    width: 270px;
+  }
+}
+
+.privileges-item__icon-fon {
+    display: flex;
+    height: 120px;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--bgc-team);
+    border-radius: 4px;
+    margin-bottom: 30px;
+}
+@media screen and (min-width: 480px) {
+    .privileges-item__icon-fon {
+        width: 450px;
+    }
+}
+@media screen and (min-width: 768px) {
+    .privileges-item__icon-fon {
+        width: 354px;
+    }
+}
+@media screen and (min-width: 1200px) {
+    .privileges-item__icon-fon {
+        width: 270px;
+    }
+}
+.privileges-item__icon {
+    align-items: center;
+}
+// .list .privileges-item + .privileges-item {
+//     margin-left: 30px;
+// }
+
+.privileges-item__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--fst-text-color);
+    margin-bottom: 10px;
+}
+@media screen and (max-width: 767px) {
+    .privileges-item__title {
+        text-align: center;
+    }
+}
+@media screen and (min-width: 768px) {
+    .privileges-item__title {
+        text-align: left;
+    }
+}
+.privileges-item__text {
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(--snd-text-color);
+}
