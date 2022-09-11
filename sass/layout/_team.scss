@@ -16,6 +16,7 @@
     justify-content: center;
     align-items: center;
     grid-gap: 30px;
+    list-style: none;
 }
 
 .team-list__item {
@@ -26,7 +27,7 @@
 }
 @media screen and (max-width: 479px) {
     .team-list__item {
-        width: 270px;
+        width: 450px;
     }
 }
 @media screen and (min-width: 480px) {
@@ -39,9 +40,12 @@
         width: 354px;
     }
 }
-@media screen and (min-width: 1200px) {
+@media screen and (min-width: 1199px) {
     .team-list__item {
         width: 270px;
+    }
+    .list .team-list__item + .team-list__item {
+    margin-left: 30px;
     }
 }
 
@@ -102,9 +106,7 @@
     }
 }
 
-.list .team-list__item + .team-list__item {
-    margin-left: 30px;
-}
+
 
 .team-list__social-icon {
     fill: var(--social-icon-color);
