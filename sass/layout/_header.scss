@@ -20,11 +20,14 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-}
-@media screen and (max-width: 767px) {
-  .header--section {
-    max-width: 767px;
-  }
+
+    @media screen and (min-width: 480px) {
+      min-width: 480 px;
+    }
+
+    @media screen and (max-width: 767px) {
+      max-width: 767px;
+    }
 }
 
 .header__nav {
@@ -143,9 +146,8 @@
     fill: currentColor;
 }
 
-// .header-contact__item + .header-contact__item {
-//     margin-left: 50px;
-// }
+
+// Mobile menu
 
 .menu-button {
   display: inline-flex;
@@ -155,14 +157,13 @@
   background-color: transparent;
   // padding: 10px 0;
   z-index: 1;
-}
-@media screen and (min-width: 768px) {
-  .menu-button {
+  
+  @media screen and (min-width: 768px) {
     display: none;
   }
 }
-.mob-menu__link--current {
-  color: var(--accent-color);
+.mob-menu__link.mob-menu__link--current {
+  color: var(--special-color);
 }
 .menu-button__icon--menu {
   display: none;
@@ -179,7 +180,7 @@
 }
 
 .menu-button__icon:hover .menu-button__icon--close, .menu-button__icon:focus .menu-button__icon--close {
-  color: var(--accent-color);
+  color: var(--special-color);
 }
 
 .menu__container {
@@ -203,6 +204,7 @@
     .is-open {
     display: flex;
     flex-direction: column;
+    margin-left: auto;
   }
 }
 
@@ -228,11 +230,11 @@
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     & {
-      color: var(--accent-color);
+      color: var(--fst-text-color);
     }
 
     &:hover, &:focus {
-    color: var(--accent-color);
+    color: var(--special-color);
     }
 }
 
@@ -252,7 +254,7 @@
     font-size: 34px;
     line-height: 1.17;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: var(--special-color);
     text-decoration: none;
     transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -266,7 +268,7 @@
     color: var(--snd-text-color);
 }
 .menu-contacts__item:last-child .menu-contacts__link:hover, .menu-contacts__item:last-child .menu-contacts__link:focus {
-    color: var(--accent-color);
+    color: var(--special-color);
 }
 
 .menu-social {
@@ -292,7 +294,8 @@
     font-size: 18px;
     line-height: 1.22;
     letter-spacing: 0.02em;
-    color: var(--accent-color);
+    color: var(--special-color);
+    text-decoration: none;
 
     @media screen and (max-width: 400px) {
       font-size: 14px;

@@ -10,6 +10,13 @@
     display: inline-block;
     align-items: center;
     text-align: center;
+
+    @media screen and (min-width: 1199px) {
+            margin-right: 92px;
+    }
+    @media screen and (min-width: 767px) {
+            margin-right: 87px;
+    }
 }
 .logo__web--color {
     color: var(--special-color);
@@ -17,13 +24,14 @@
 .logo__studio--color {
     color: #FFFFFF;
 }
-@media screen and (min-width: 1199px) {
-    .logo {
-        margin-right: 92px;
+
+@media screen and (min-width: 767px) {
+    .footer-logo.logo {
+        margin: auto;
     }
 }
-@media screen and (min-width: 767px) {
-    .logo {
-        margin-right: 87px;
+@media screen and (min-width: 480px) {
+    .logo-header {
+        margin-right: auto;
     }
 }

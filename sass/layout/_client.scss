@@ -25,7 +25,7 @@
 .clients-list__link {
     display: flex;
     height: 92px;
-    padding: 16px 32px;
+    // padding: 16px 32px;
     // width: 170px;
     align-items: center;
     justify-content: center;
@@ -42,20 +42,16 @@
     color: var(--special-color);
     border-color: var(--special-color);
     }            
-}
 
-@media screen and (max-width: 767px) {
-    .clients-list__link {
-        width: 210px;
-    }
-}
-@media screen and (min-width: 768px) {
-    .clients-list__link {
+
+// @media screen and (max-width: 767px) {
+//         width: 210px;
+//     }
+
+    @media screen and (min-width: 768px) {
         width: 226px;
     }
-}
-@media screen and (min-width: 1200px) {
-    .clients-list__link {
+    @media screen and (min-width: 1200px) {
         width: 170px;
     }
 }
@@ -66,5 +62,13 @@
     &:hover,
     &:focus {
     fill: var(--special-color);
+    }
+}
+
+.clients-list__item {
+    width: calc((100% - 30px)/2);
+
+    @media screen and (min-width: 767px) {
+        width: calc((100% - 60px)/3);
     }
 }

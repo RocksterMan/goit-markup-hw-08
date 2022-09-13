@@ -44,10 +44,10 @@
             <div class="menu__container" id="menu__container" data-menu-close>
             <ul class="mob-menu">
                 <li class="mob-menu__item">
-                <a class="mob-menu__link mob-menu__link--current" href="./index.html">Студія</a>
+                <a class="mob-menu__link" href="./index.html">Студія</a>
                 </li>
                 <li class="mob-menu__item">
-                <a class="mob-menu__link" href="./portfolio.html">Портфоліо</a>
+                <a class="mob-menu__link mob-menu__link--current" href="./portfolio.html">Портфоліо</a>
                 </li>
                 <li class="mob-menu__item">
                 <a class="mob-menu__link" href="">Контакти</a>
@@ -293,11 +293,12 @@
         </div>
         <div class="footer-subscribe">
             <p class="footer-subscribe__title">Підпишіться на розсилку</p>
-            <div class="footer-subscribe__form">
-                <label for="footer-subscribe__mail" class="footer-subscribe-mail"></label>
+            <form class="footer-subscribe__form">
                 <input class="footer-subscribe__input" type="email" name="submit-mail" id="footer-subscribe__mail" placeholder="E-mail">
-                <button type="submit" class="footer-subscribe__button">Підписатися</button>
-        </div>
+                <button type="submit" class="footer-subscribe__button">Підписатися <svg class="footer-subscribe__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-subscribe-airplane"></use></svg>
+                </button>
+            </form>
         </div>
      </div>
 </footer>

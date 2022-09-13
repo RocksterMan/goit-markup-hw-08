@@ -15,7 +15,7 @@
 <!-- Header -->
 <header class="header">
     <div class="container header-section">
-            <a href="./index.html" class="logo" lang="en"> <span class="logo__web--color">Web</span>Studio</a>
+            <a href="./index.html" class="logo logo-header" lang="en"> <span class="logo__web--color">Web</span>Studio</a>
         <nav class="header__nav">
             <ul class="navigation list">
                 <li class="navigation__item"><a href="./index.html" class="navigation__link navigation__link--current">Студія</a></li>
@@ -281,32 +281,32 @@
                 <li class="clients-list__item">
                     <a class="clients-list__link link" href="" target="_blank" rel="noreferrer noopener">
                     <svg class="clients-list__icon" width="106" height="60">
-                    <use href="./images/symbol-defs.svg#icon-logo1"></use>
+                    <use href="./images/symbol-defs.svg#icon-logo1" width="106" height="60"></use>
                 </svg></a></li>
                 <li class="clients-list__item">
                     <a class="clients-list__link link" href="" target="_blank" rel="noreferrer noopener">
                     <svg class="clients-list__icon" width="106" height="60">
-                    <use href="./images/symbol-defs.svg#icon-logo2"></use>
+                    <use href="./images/symbol-defs.svg#icon-logo2" width="106" height="60"></use>
                 </svg></a></li>
                 <li class="clients-list__item">
                     <a class="clients-list__link link" href="" target="_blank" rel="noreferrer noopener">
                     <svg class="clients-list__icon" width="106" height="60">
-                    <use href="./images/symbol-defs.svg#icon-logo3"></use>
+                    <use href="./images/symbol-defs.svg#icon-logo3" width="106" height="60"></use>
                 </svg></a></li>
                 <li class="clients-list__item">
                     <a class="clients-list__link link" href="" target="_blank" rel="noreferrer noopener">
                     <svg class="clients-list__icon" width="106" height="60">
-                    <use href="./images/symbol-defs.svg#icon-logo4"></use>
+                    <use href="./images/symbol-defs.svg#icon-logo4" width="106" height="60"></use>
                 </svg></a></li>
                 <li class="clients-list__item">
                     <a class="clients-list__link link" href="" target="_blank" rel="noreferrer noopener">
                     <svg class="clients-list__icon" width="106" height="60">
-                    <use href="./images/symbol-defs.svg#icon-logo5"></use>
+                    <use href="./images/symbol-defs.svg#icon-logo5" width="106" height="60"></use>
                 </svg></a></li>
                 <li class="clients-list__item">
                     <a class="clients-list__link link" href="" target="_blank" rel="noreferrer noopener">
                     <svg class="clients-list__icon" width="106" height="60">
-                    <use href="./images/symbol-defs.svg#icon-logo6"></use>
+                    <use href="./images/symbol-defs.svg#icon-logo6" width="106" height="60"></use>
                 </svg></a></li>
             </ul>
         </div>
@@ -355,11 +355,12 @@
         </div>
         <div class="footer-subscribe">
             <p class="footer-subscribe__title">Підпишіться на розсилку</p>
-            <div class="footer-subscribe__form">
-                <label for="footer-subscribe__mail" class="footer-subscribe-mail"></label>
+            <form class="footer-subscribe__form">
                 <input class="footer-subscribe__input" type="email" name="submit-mail" id="footer-subscribe__mail" placeholder="E-mail">
-                <button type="submit" class="footer-subscribe__button">Підписатися</button>
-        </div>
+                <button type="submit" class="footer-subscribe__button">Підписатися <svg class="footer-subscribe__icon" width="24" height="24">
+                <use href="./images/symbol-defs.svg#icon-subscribe-airplane"></use></svg>
+                </button>
+            </form>
         </div>
      </div>
 </footer>
