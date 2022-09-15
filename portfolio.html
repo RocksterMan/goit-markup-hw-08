@@ -15,7 +15,7 @@
 <!-- Header -->
 <header class="header">
         <div class="container header-section">
-        <a href="./index.html" class="logo" lang="en"> <span class="logo__web--color">Web</span>Studio</a>
+        <a href="./index.html" class="logo logo-header" lang="en"> <span class="logo__web--color">Web</span>Studio</a>
         <nav class="header__nav">
             <ul class="navigation list">
                 <li class="navigation__item"><a href="./index.html" class="navigation__link">Студія</a></li>
@@ -96,12 +96,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic" 
-                        srcset="
-                        ./images/portfolio/our-people.jpeg 1x,
-                        ./images/portfolio/our-people-2x.jpeg 2x" 
-                        src="./images/portfolio/our-people.jpeg" 
-                        alt="Технокряк" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/tehno-dest-1x 1x,
+                        ./images/portfolio/tehno-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/tehno-tab-1x.jpeg 1x,
+                        ./images/portfolio/tehno-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/tehno-tel-1x.jpeg 1x,
+                        ./images/portfolio/tehno-tel-2x.jpeg 2x" media="(max-width:767px)"/>
+                        <img src="./images/portfolio/tehno-tel-1x.jpeg" 
+                        alt="Технокряк" width="450">
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="project-meta">
@@ -113,12 +119,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic"
-                        srcset="
-                        ./images/portfolio/ball.jpeg 1x,
-                        ./images/portfolio/ball-2x.jpeg 2x" 
-                        src="./images/portfolio/ball.jpg" 
-                        alt="Постер New Orlean vs Golden Star" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/poster-dest-1x.jpeg 1x,
+                        ./images/portfolio/poster-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/poster-tab-1x.jpeg 1x,
+                        ./images/portfolio/poster-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/poster-tel-1x.jpeg 1x,
+                        ./images/portfolio/poster-tel-2x.jpeg 2x" media="(min-width:767px)"/>
+                        <img src="./images/portfolio/poster-tel-1x.jpeg" alt="Постер New Orlean vs Golden Star" width="450"/>
+                        </picture>
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="project-meta">
@@ -130,12 +142,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic"
-                        srcset="
-                        ./images/portfolio/seafood.jpeg 1x,
-                        ./images/portfolio/seafood-2x.jpeg 2x" 
-                        src="./images/portfolio/seafood.jpeg" 
-                        alt="Ресторан Seafood" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/Seafood-dest-1x.jpeg 1x,
+                        ./images/portfolio/Seafood-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/Seafood-tab-1x.jpeg 1x,
+                        ./images/portfolio/Seafood-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/Seafood-tel-1x.jpeg 1x,
+                        ./images/portfolio/Seafood-tel-2x.jpeg 2x" media="(min-width:767px)"/>
+                        <img src="./images/portfolio/Seafood-tel-1x.jpeg" alt="Ресторан Seafood" width="450">
+                        </picture>
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="project-meta">
@@ -147,12 +165,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic" 
-                        srcset="
-                        ./images/portfolio/headphone.jpeg 1x,
-                        ./images/portfolio/headphone-2x.jpeg 2x" 
-                        src="./images/portfolio/headphone.jpeg" 
-                        alt="Проєкт Prime" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/Prime-dest-1x.jpeg 1x,
+                        ./images/portfolio/Prime-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/Prime-tab-1x.jpeg 1x,
+                        ./images/portfolio/Prime-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/Prime-tel-1x.jpeg 1x,
+                        ./images/portfolio/Prime-tel-2x.jpeg 2x" media="(min-width:767px)"/>
+                        <img src="./images/portfolio/Prime-tel-1x.jpeg" alt="Проєкт Prime" width="450">
+                        </picture>                        
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="project-meta">
@@ -164,12 +188,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic" 
-                        srcset="
-                        ./images/portfolio/2-box.jpeg 1x,
-                        ./images/portfolio/2-box-2x.jpeg 2x" 
-                        src="./images/portfolio/2-box.jpg" 
-                        alt="Проєкт Boxes" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/Boxes-dest-1x.jpeg 1x,
+                        ./images/portfolio/Boxes-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/Boxes-tab-1x.jpeg 1x,
+                        ./images/portfolio/Boxes-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/Boxes-tel-1x.jpeg 1x,
+                        ./images/portfolio/Boxes-tel-2x.jpeg 2x" media="(min-width:767px)"/>
+                        <img src="./images/portfolio/Boxes-tel-1x.jpg" alt="Проєкт Boxes" width="450">
+                        </picture>
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                      </div>
                      <div class="project-meta">
@@ -181,12 +211,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic" 
-                        srcset="
-                        ./images/portfolio/screen.jpeg 1x,
-                        ./images/portfolio/screen-2x.jpeg 2x" 
-                        src="./images/portfolio/screen.jpeg" 
-                        alt="Inspiration has no Borders" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/Mac-dest-1x.jpeg 1x,
+                        ./images/portfolio/Mac-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/Mac-tab-1x.jpeg 1x,
+                        ./images/portfolio/Mac-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/Mac-tel-1x.jpeg 1x,
+                        ./images/portfolio/Mac-tel-2x.jpeg 2x" media="(min-width:767px)"/>
+                        <img src="./images/portfolio/Mac-tel-1x.jpeg" alt="Inspiration has no Borders" width="450">
+                        </picture>
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="project-meta">
@@ -198,12 +234,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic" 
-                        srcset="
-                        ./images/portfolio/book.jpeg 1x,
-                        ./images/portfolio/book-2x.jpeg 2x" 
-                        src="./images/portfolio/book.jpg" 
-                        alt="Видання Limited Edition" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/book-dest-1x.jpeg 1x,
+                        ./images/portfolio/book-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/book-tab-1x.jpeg 1x,
+                        ./images/portfolio/book-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/book-tel-1x.jpeg 1x,
+                        ./images/portfolio/book-tel-2x.jpeg 2x" media="(min-width:767px)"/>
+                        <img src="./images/portfolio/book-tel-1x.jpg" alt="Видання Limited Edition" width="450">
+                        </picture>
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="project-meta">
@@ -215,12 +257,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic" 
-                        srcset="
-                        ./images/portfolio/label.jpeg 1x,
-                        ./images/portfolio/label-2x.jpeg 2x" 
-                        src="./images/portfolio/label.jpeg" 
-                        alt="Проект LAB" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/lab-dest-1x.jpeg 1x,
+                        ./images/portfolio/lab-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/lab-tab-1x.jpeg 1x,
+                        ./images/portfolio/lab-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/lab-tel-1x.jpeg 1x,
+                        ./images/portfolio/lab-tel-2x.jpeg 2x" media="(min-width:767px)"/>
+                        <img src="./images/portfolio/lab-tel-1x.jpeg" alt="Проект LAB" width="450">
+                        </picture>
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="project-meta">
@@ -232,12 +280,18 @@
             <li class="project-item">
                 <a href="#" class="project__link">
                     <div class="project-overlay">
-                        <img class="project__img pic" 
-                        srcset="
-                        ./images/portfolio/leptop.jpeg 1x,
-                        ./images/portfolio/leptop-2x.jpeg 2x" 
-                        src="./images/portfolio/leptop.jpeg" 
-                        alt="Growing Business" width="370">
+                        <picture class="project__img pic">
+                        <source srcset="
+                        ./images/portfolio/Business-dest-1x.jpeg 1x,
+                        ./images/portfolio/Business-dest-2x.jpeg 2x" media="(min-width:1200px)"/>
+                        <source srcset="
+                        ./images/portfolio/Business-tab-1x.jpeg 1x,
+                        ./images/portfolio/Business-tab-2x.jpeg 2x" media="(min-width:768px)"/>
+                        <source srcset="
+                        ./images/portfolio/Business-tel-1x.jpeg 1x,
+                        ./images/portfolio/Business-tel-2x.jpeg 2x" media="(min-width:767px)"/>
+                        <img src="./images/portfolio/Business-tel-1x.jpeg" alt="Growing Business" width="450">
+                        </picture>
                         <p class="project-overlay__text">Ресурс пропонує комплексні пропозиції з різним рівнем функціоналу та сервісів. Все це дозволить відвідувачу отримати вичерпні відомості про компанію чи приватну особу.</p>
                     </div>
                     <div class="project-meta">
