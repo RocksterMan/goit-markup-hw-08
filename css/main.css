@@ -971,6 +971,7 @@ img {
 @media screen and (min-width: 767px) {
   .footer-contacts {
     align-items: baseline;
+    justify-content: space-around;
   }
 }
 
@@ -984,11 +985,6 @@ img {
   text-decoration: none;
 }
 
-@media screen and (min-width: 767px) {
-  .footer-address {
-    margin-right: 165px;
-  }
-}
 @media screen and (min-width: 1199px) {
   .footer-address {
     margin-right: 70px;
@@ -1023,7 +1019,6 @@ img {
 @media screen and (max-width: 767.5px) {
   .footer-social {
     margin-top: 60px;
-    margin-bottom: 60px;
   }
 }
 .footer-social__title {
@@ -1072,15 +1067,11 @@ img {
 .footer-subscribe {
   display: flex;
   flex-direction: column;
-}
-@media screen and (min-width: 767px) and (max-width: 1199px) {
-  .footer-subscribe {
-    margin-top: 60px;
-  }
+  margin-top: 60px;
 }
 @media screen and (min-width: 1199px) {
   .footer-subscribe {
-    margin-left: auto;
+    margin-left: 93px;
   }
 }
 
@@ -1254,17 +1245,21 @@ img {
 .portfolio-btn-list {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 30px;
   justify-content: center;
   margin-right: -8px;
+  margin-bottom: 40px;
 }
 .portfolio-btn-list .portfolio-btn-item:not(:last-child) {
   margin-right: 8px;
 }
 @media screen and (max-width: 767px) {
   .portfolio-btn-list {
-    margin-bottom: 25px;
     justify-content: left;
+  }
+}
+@media screen and (max-width: 1199px) {
+  .portfolio-btn-list {
+    margin-bottom: 30px;
   }
 }
 @media screen and (min-width: 1199px) {
@@ -1276,6 +1271,9 @@ img {
 @media screen and (max-width: 767px) {
   .portfolio-btn-item {
     margin-bottom: 15px;
+  }
+  .portfolio-btn-item:last-child {
+    margin-bottom: 0;
   }
 }
 .portfolio-button {
